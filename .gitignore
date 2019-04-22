@@ -107,5 +107,5 @@ venv.bak/
 
 frontend/node_modules
 vcs.xml
-
+.DS_Store
 .idea/
