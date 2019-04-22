@@ -7,7 +7,9 @@ from flask_cors import CORS
 import flask_restful
 
 FILE_ROOT = os.getcwd()
-static_path = os.path.join(FILE_ROOT, '../frontend/dist')
+static_path = os.path.abspath(os.path.join(FILE_ROOT, '../frontend/dist'))
+
+print(static_path)
 
 __all__ = [
     'build_app'
