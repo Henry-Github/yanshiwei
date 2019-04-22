@@ -1,0 +1,7 @@
+numpy
+matplotlib
+sklearn
+xgboost
+flask
+flask_cors
+flask_restful
