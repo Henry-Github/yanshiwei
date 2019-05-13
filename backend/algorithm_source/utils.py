@@ -20,7 +20,10 @@ def summarize_results(results, maximize=True, top_n=10):
     scores = [results[x[0]] for x in mean_scores[:n]]
     d = []
     for s in scores:
-        d.append(s.tolist())
+        if isinstance(s, list):
+            d.append(s)
+        else:
+            d.append(s.tolist())
     ranks = []
     for i in range(n):
         name = names[i]
